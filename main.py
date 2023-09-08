@@ -1,7 +1,7 @@
 import numpy as np
 
-M = np.array([[0.7, 0.2], [0.3, 0.8]])
-x_0 = np.array([[100], [100]])
+#M = np.array([[0.7, 0.2], [0.3, 0.8]])
+#x_0 = np.array([[100], [100]])
 
 def checkValidTransitionMatrix(T):
     if T.shape[0] != T.shape[1]:
@@ -31,6 +31,6 @@ def steady_state(T):
                 return s_s
     return None
 
-print(checkValidTransitionMatrix(M))
-print(steady_state(M))
-print(iterateNTimes(2000, M, steady_state(M)))
+#print(checkValidTransitionMatrix(M))
+#print(steady_state(M))
+#print(iterateNTimes(2000, M, steady_state(M)))
